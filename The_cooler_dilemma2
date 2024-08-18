@@ -1,0 +1,10 @@
+n=int(input())
+for i in range(n):
+    a,b=map(int,input().split())
+    if a>=b:
+        print("0")
+    else:
+        z=b//a
+        if b%a==0:
+            z-=1
+        print(z)
