@@ -1,0 +1,5 @@
+n=int(input())
+for i in range(n):
+    g,c=map(int,input().split())
+    d=(c*c)//(2*g)
+    print(d)
