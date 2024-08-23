@@ -1,0 +1,12 @@
+def is_neon(n):
+    sq=n*n
+    sum = 0
+    while sq> 0:
+        sum += sq % 10
+        sq//= 10
+    return sum == n
+num = int(input())
+if is_neon_number(num):
+    print("neon number")
+else:
+    print("not  neon number")
