@@ -1,0 +1,7 @@
+for i in range(int(input())):
+    n,x,y=map(int,input().split())
+    if n%2==0:
+        earn = max(n*x,(n//2)*y)
+    else:
+        earn = max(n*x,((n//2)*y+x))
+    print(earn)
