@@ -1,0 +1,9 @@
+n=int(input())
+for i in range(n):
+    p=int(input())
+    m=p%7
+    q=p//7
+    if(m>=2):
+        print(q+1)
+    else:
+        print(q)
