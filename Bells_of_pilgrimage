@@ -1,0 +1,6 @@
+t=int(input())
+for m in range(t):
+  n,x,k,p=map(int,input().split())
+  if n==k:print(p+(x*10)+((k-x)*5)+20)
+  elif x>=k:print(p+(k*10))
+  else: print(p+(x*10)+(k-x)*5)
