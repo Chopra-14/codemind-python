@@ -1,0 +1,7 @@
+n=int(input())
+for i in range(n):
+  a,b=map(int,input().split())
+  if abs(a-b)%2==0 or abs(a-b)%4==0:
+      print("yes")
+  else:
+      print("no")
