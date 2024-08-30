@@ -1,0 +1,9 @@
+n=int(input())
+for i in range(n):
+    x,y=map(int,input().split())
+    a=(x*x*x*x)+4*(y*y)
+    b=4*(x*x)*y
+    if a==b:
+        print("yes")
+    else:
+        print("No")
