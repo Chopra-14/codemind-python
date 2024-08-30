@@ -1,0 +1,12 @@
+for i in range(int(input())):
+    a,b=map(int,input().split())
+    if a>b:
+        while(a>b):
+            b*=2
+    elif b>a:
+        while(b>a):
+            a*=2
+    if a==b:
+        print("YES")
+    else:
+        print("NO")
