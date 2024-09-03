@@ -1,0 +1,12 @@
+n=int(input())
+for i in range(n):
+    a,b,c,d,f=map(int,input().split())
+    e=a*b 
+    if e<10:
+        print("0")
+    elif e>=10 and e<21:
+        print(c)
+    elif e>=21 and e<=42:
+        print(d)
+    else:
+        print(f)
