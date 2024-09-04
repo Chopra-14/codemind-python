@@ -1,0 +1,15 @@
+for i in range(int(input())):
+    a,b,c,d,e=map(int,input().split())
+    s=a+b+c+d+e
+    if s==0:
+        print("Beginner")
+    elif s==2:
+        print("Middle Developer")
+    elif s==1:
+        print("Junior Developer")
+    elif s==5:
+        print("Jeff Dean")
+    elif s==4:
+        print("Hacker")
+    else:
+        print("Senior Developer")
