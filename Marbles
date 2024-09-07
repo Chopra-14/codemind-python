@@ -1,0 +1,5 @@
+import math
+for i in range(int(input())):
+    n,k = map(int,input().split())
+    res = math.comb(n-1, k-1)
+    print(res)
