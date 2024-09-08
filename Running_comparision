@@ -1,0 +1,10 @@
+a=int(input())
+for i in range(a):
+    x=int(input())
+    b=list(map(int,input().split()))
+    c=list(map(int,input().split()))
+    count=0
+    for i in range(x):
+        if b[i]<=2*c[i] and c[i]<=2*b[i]:
+            count+=1
+    print(count)
