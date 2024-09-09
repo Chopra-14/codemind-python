@@ -1,0 +1,8 @@
+for i in range(int(input())):
+    n,k=map(int,input().split())
+    lt=list(map(int,input().split()))
+    la=0
+    for i in range(n):
+        if lt[i]>k:
+            la+=lt[i]-k
+    print(la)
