@@ -1,0 +1,2 @@
+w,h=map(int,input().split())
+print("YES") if((60<=w)and(130>=h)) else print("NO")
