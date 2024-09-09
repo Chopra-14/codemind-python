@@ -1,0 +1,10 @@
+t=int(input())
+for i in range(t):
+    a,b,c=map(str,input().split())
+    x,y=map(str,input().split())
+    if a in (x,y):
+        print(a)
+    elif b in (x,y):
+        print(b)
+    else:
+        print(c)
