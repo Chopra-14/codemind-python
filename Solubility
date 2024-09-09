@@ -1,0 +1,4 @@
+for i in range(int(input())):
+    x,a,b=map(int,input().split())
+    temp=100-x
+    print((a+(temp*b))*10)
