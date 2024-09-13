@@ -1,0 +1,8 @@
+import math
+for i in range(int(input())):
+    x=int(input())
+    c=(20/100)*x
+    a=math.ceil(100/c)
+    print(a)
+        
+     
