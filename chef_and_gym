@@ -1,0 +1,6 @@
+gym = int(input())
+for g in range(gym):
+  M,T,B = map(int,input().split())
+  if B>=M+T: print(2)
+  elif B>=M: print(1)
+  else: print(0)
