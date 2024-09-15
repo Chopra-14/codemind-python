@@ -1,0 +1,16 @@
+for i in range(int(input())): 
+    d,x,y=map(int,input().split())
+    ans=-1
+    if y>=x:
+        print(0)
+    else:
+        c=0
+        while y!=0:
+            y-=1
+            c+=1
+            dis=(d*c*x)/100
+            discount=x-dis
+            if (x-dis)<=y:
+                ans=c
+                break
+        print(ans)
