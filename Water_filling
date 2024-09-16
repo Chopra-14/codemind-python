@@ -1,0 +1,7 @@
+t=int(input())
+for i in range(t):
+    a,b,c=map(int,input().split())
+    if a+b>=2 or a+c>=2 or c+b>=2:
+        print("Not Now")
+    else:
+        print("Water filling time")
