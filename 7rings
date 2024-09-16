@@ -1,0 +1,9 @@
+T = int(input())
+for i in range(T):
+    N,X=map(int,input().split())
+    Z = N*X 
+    A = len(str(Z))
+    if A == 5:
+        print("YES")
+    else:
+        print("NO")
