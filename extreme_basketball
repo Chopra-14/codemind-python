@@ -1,0 +1,11 @@
+import math
+t = int(input())
+while t:
+    a,b = map(int,input().split())
+    difference = a - b
+    if difference >= 10:
+        print(0)
+    else:
+        remaining_points = 10 - difference
+        print(math.ceil(remaining_points/3))
+    t-=1
