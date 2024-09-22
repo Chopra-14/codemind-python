@@ -1,0 +1,15 @@
+def min(t,n):
+    res=[]
+    for X,Y in n:
+        c= 0
+        while(X>= 2*Y or Y >= 2 * X):
+            if X<Y:
+                X+=1
+            else:
+                Y+=1
+            c+= 1
+        res.append(c)
+    return res
+n= int(input())
+t=list(map(int,input().split()))
+print(n)
