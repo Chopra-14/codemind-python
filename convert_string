@@ -1,0 +1,12 @@
+for i in range(int(input())):
+    n=int(input())
+    t=input()
+    z=t.count('0')
+    o=t.count('1')
+    r=0
+    for k in range(1,n+1):
+        if k>=z and (k-z)%2==0:
+            r+=1
+        elif k>=o and (k-o)%2==0:
+            r += 1
+    print(r)
