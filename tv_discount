@@ -1,0 +1,11 @@
+T=int(input())
+for i in range(T):
+    A,B,C,D=map(int,input().split())
+    a=A-C
+    b=B-D
+    if a<b:
+        print("first")
+    elif a==b:
+        print("any")
+    else:
+        print("second")
