@@ -1,0 +1,11 @@
+t = int(input())
+for _ in range(t):
+    A = list(map(str,input().split()))
+    a = int("".join(sorted(A[:3],reverse=True)))
+    b = int("".join(sorted(A[3:],reverse=True)))
+    if a>b:
+        print("Alice")
+    elif a<b:
+        print("Bob")
+    else:
+        print("Tie")
