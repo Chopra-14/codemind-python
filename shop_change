@@ -1,0 +1,7 @@
+b = int(input())
+c = []
+for i in range(b):
+    a = int(input())
+    c.append(a)
+for i in c:
+    print(100-i)
