@@ -1,0 +1,14 @@
+arr=[]
+even=0
+odd=0
+n=int(input())
+arr=list(map(int, input().split()))
+for w in arr:
+    if w%2==0:
+        even+=1
+    else:
+        odd+=1
+if even>odd:
+    print('READY FOR BATTLE')
+else:
+    print('NOT READY')
