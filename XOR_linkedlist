@@ -1,0 +1,17 @@
+class Solution {
+    static Node insert(Node head, int data) {
+        Node newNode = new Node(data);
+        newNode.npx = head;
+        return newNode;
+    }
+
+    static ArrayList<Integer> getList(Node head) {
+        Node curr = head;
+        ArrayList<Integer> list = new ArrayList<>();
+        while(curr != null){
+            list.add(curr.data);
+            curr = curr.npx;
+        }
+        return list;
+    }
+}
