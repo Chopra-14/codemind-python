@@ -1,0 +1,11 @@
+class Solution:
+    def constructLinkedMatrix(self, mat):
+        # Your code goes here
+        for i in range(len(mat)):
+            for j in range(len(mat)):
+                mat[i][j] = Node(mat[i][j])
+                if j != 0:
+                    mat[i][j - 1].right = mat[i][j]
+                if i != 0:
+                    mat[i - 1][j].down = mat[i][j]
+        return mat[0][0]
