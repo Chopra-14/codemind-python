@@ -1,0 +1,6 @@
+class Solution:
+    def getSingle(self,arr):
+        ans=0
+        for x in arr:
+            ans=ans^x
+        return ans
