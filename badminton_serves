@@ -1,0 +1,11 @@
+n=int(input())
+for i in range(n):
+    a=int(input())
+    if a%2==0:
+        c=a//2
+        c=c+1
+        print(c)
+    else:
+        d=a+1 
+        d=d//2
+        print(d)
