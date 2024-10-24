@@ -1,0 +1,9 @@
+import math
+for i in range(int(input())):
+    n=int(input())
+    count=0
+    while n!=0:
+        power=math.floor(math.sqrt(n))
+        n -= power**2
+        count+=1
+    print(count)
