@@ -1,0 +1,11 @@
+h=['A','D','O','P','R','Q']
+t=int(input())
+for i in range(t):
+    c=0
+    s=input()
+    for i in s:
+        if i in h:
+            c+=1
+        elif i=='B':
+            c+=2
+    print(c)
