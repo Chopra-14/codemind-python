@@ -1,0 +1,12 @@
+for i in range(int(input())):
+    T = 120
+    d= int(input())
+    b = input()
+    c=0
+    for j in b:
+        if j=="1":
+            c+=1
+    if c+ (T - d) >=90:
+        print("YES")
+    else:
+        print("NO")
