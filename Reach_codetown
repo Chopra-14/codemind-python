@@ -1,0 +1,8 @@
+for i in range(int(input())):
+    a=input()
+    t1=['A','E','I','O','U']
+    if (a[1] in t1 and a[3] in t1 and a[5] in t1) and a[0] not in t1 and a[2] not in t1 and a[4] not in t1 and a[6] not in t1 and a[7] not in t1:
+        print("YES")
+    else:
+        print("NO")
+        
