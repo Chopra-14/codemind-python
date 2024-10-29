@@ -1,0 +1,7 @@
+n=int(input())
+for i in range(n):
+    x,a,b,c=map(int,input().split())
+    if x==a+b or x==b+c or x==a+c or x==a or x==b or x==c or x==a+b+c:
+        print("yes")
+    else :
+        print("No")
