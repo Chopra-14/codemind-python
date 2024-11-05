@@ -1,0 +1,7 @@
+def rotate(mat): 
+    #code here
+    mat.reverse()
+    for i in range(len(mat)):
+        for j in range(i):
+            mat[i][j],mat[j][i]=mat[j][i],mat[i][j]
+    return mat
