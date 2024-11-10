@@ -1,0 +1,21 @@
+for i in range(int(input())):
+
+    n=int(input())
+    att1=list(map(int,input().split()))
+    def1=list(map(int,input().split()))
+    
+    att2=list(map(int,input().split()))
+    def2=list(map(int,input().split()))
+    attack1=sum(att1)
+    defence1=sum(def1)
+    attack2=sum(att2)
+    defence2=sum(def2)
+    
+    if attack1>attack2 and defence1>defence2:
+        print('A')
+    
+    elif attack2>attack1 and defence2>defence1:
+        print('P')
+
+    else:
+        print('DRAW')
