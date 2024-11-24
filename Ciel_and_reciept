@@ -1,0 +1,2 @@
+def menus(p): print(p//2048+bin(p%2048).count("1"))
+for i in range(int(input())): menus(int(input()))
