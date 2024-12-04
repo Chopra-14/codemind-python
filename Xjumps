@@ -1,0 +1,9 @@
+t=int(input())
+for i in range(t):
+    x,y=map(int,input().split())
+    k=x//y
+    l=x%y
+    if l==0:
+        print(k)
+    else:
+        print(k+l)
