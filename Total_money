@@ -1,0 +1,6 @@
+A, X, Y = map(int, input().split())
+total_money = X + Y
+if total_money >= A:
+    print("YES")
+else:
+    print("NO")
