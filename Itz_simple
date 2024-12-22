@@ -1,0 +1,45 @@
+def determine_view(T, test_cases):
+
+    results = []
+
+    for t in range(T):
+
+        N, K, P = test_cases[t]["meta"]
+
+        A = sorted(test_cases[t]["heights"], reverse=True)  
+
+        ved_height = K + A[0]
+
+        varun_height = P + sum(A[1:])
+
+        if ved_height > varun_height:
+
+            results.append("Ved")
+
+        elif varun_height > ved_height:
+
+            results.append("Varun")
+
+        else:
+
+            results.append("Equal")
+
+    return results
+
+T = int(input()) 
+
+test_cases = []
+
+for _ in range(T):
+
+    N, K, P = map(int, input().split())
+
+    A = list(map(int, input().split()))
+
+    test_cases.append({"meta": (N, K, P), "heights": A})
+
+results = determine_view(T, test_cases)
+
+for result in results:
+
+    print(result)
