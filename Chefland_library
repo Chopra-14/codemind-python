@@ -1,0 +1,27 @@
+t=int(input())
+
+for i in range(t):
+
+    n=int(input())
+
+    a=list(map(int,input().split()))
+
+    p={}
+
+    for i in range(1,n+1):
+
+        r=a[i-1]
+
+        o=i
+
+        if r in p:
+
+            p[r]=max(p[r],o)
+
+        else:
+
+            p[r]=o
+
+    tot= sum(p.values())
+
+    print(tot)
