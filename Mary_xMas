@@ -1,0 +1,23 @@
+def m(x):
+
+    a=[1, 2, 4]
+
+    c=0
+
+    for t in a:
+
+        if x>=t:
+
+            c+=1
+
+            x-=t
+
+        else:
+
+            break
+
+    return c
+
+x=int(input())
+
+print(m(x))
