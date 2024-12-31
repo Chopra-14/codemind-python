@@ -1,0 +1,7 @@
+t=int(input())
+tot=1000
+for i in range(t):
+    h,l,w=map(int,input().split())
+    area=2*(h*l+h*w+l*w)
+    m= tot//area
+    print(m)
