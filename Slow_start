@@ -1,0 +1,11 @@
+for i in range(int(input())):
+    x,h=map(int,input().split())
+    y=x//2
+    c=0
+    while h>0:
+        if c>=5:
+            h-=x
+        else:
+            h-=y
+        c+=1
+    print(c)
