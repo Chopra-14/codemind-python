@@ -1,0 +1,69 @@
+def minimum_seconds_to_balance(t, test_cases):
+
+
+
+    results = []
+
+
+
+    for case in test_cases:
+
+        n, temperatures = case
+
+        prefix_sum = 0
+
+        seconds = 0
+
+        for temp in temperatures:
+
+            prefix_sum += temp
+
+            seconds += abs(prefix_sum)
+
+        results.append(seconds)
+
+    return results
+
+
+
+def main():
+
+    import sys
+
+    input = sys.stdin.read
+
+    data = input().split()
+
+    
+
+    t = int(data[0])
+
+    index = 1
+
+    test_cases = []
+
+    
+
+    for _ in range(t):
+
+        n = int(data[index])
+
+        index += 1
+
+        temperatures = list(map(int, data[index:index + n]))
+
+        index += n
+
+        test_cases.append((n, temperatures))
+
+    
+
+    results = minimum_seconds_to_balance(t, test_cases)
+
+    print('\n'.join(map(str, results)))
+
+
+
+if __name__ == "__main__":
+
+    main()
