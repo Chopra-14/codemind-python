@@ -1,0 +1,12 @@
+for i in range(int(input())):
+    n = int(input())
+    s = input()
+    valid = ''
+    for i in s:
+        if i=='0':
+            valid+='1'
+        else:
+            valid+='0'
+        
+    print(valid)
+    
