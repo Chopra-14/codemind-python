@@ -1,0 +1,44 @@
+for i in range(int(input())):
+
+    n=int(input())
+
+    a=input()
+
+    b=input()
+
+    c11=0 
+
+    c10=0
+
+    score=0
+
+    for i in range(n):
+
+        if(a[i]=='1' and b[i]=='1'):
+
+            c11+=1 
+
+        elif(a[i]=='0' and b[i]=='1'):
+
+            c10+=1 
+
+        elif(a[i]=='1' and b[i]=='0'):
+
+            c10+=1 
+
+    score+=c11 
+
+    if(score%2!=0):
+
+        print("YES")
+
+    else:
+
+        if(c10>0):
+
+            print("YES")
+
+        else:
+
+            print("NO")
+
