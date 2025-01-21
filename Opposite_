@@ -1,0 +1,17 @@
+def gbs(T,testcase):
+    results=[]
+    for i in range(T):
+        N=testcase[i][0]
+        S=testcase[i][1]
+        T=''.join('1' if char =='0' else '0' for char in S)
+        results.append(T)
+    return results
+T=int(input())
+testcase=[]
+for _ in range(T):
+    N=int(input())
+    S=input()
+    testcase.append((N,S))
+results=gbs(T,testcase)
+for result in results:
+    print (result)
