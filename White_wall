@@ -1,0 +1,25 @@
+for i in range(int(input())):
+
+    n=int(input())
+
+    s=input().strip()
+
+    p= ["RGB", "RBG", "GRB","GBR", "BRG", "BGR"]
+
+    cha= float('inf')
+
+    for pat in p:
+
+        c= 0
+
+        for i in range(n):
+
+            e=pat[i % 3]
+
+            if s[i] != e:
+
+                c+= 1
+
+        cha= min(cha, c)
+
+    print(cha)
