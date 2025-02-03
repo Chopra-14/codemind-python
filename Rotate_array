@@ -1,0 +1,11 @@
+class Solution:
+    #Function to rotate an array by d elements in counter-clockwise direction. 
+    def rotateArr(self, arr, d):
+        #Your code here
+       for i in range(len(arr)-d):
+          ele=arr[-1];
+          arr.pop();
+          arr.reverse();
+          arr.append(ele);
+          arr.reverse();
+       return arr;
