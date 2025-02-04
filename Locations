@@ -1,0 +1,8 @@
+SELECT *
+FROM Properties prop
+INNER JOIN Bookings bk ON prop.property_id = bk.property_id
+WHERE prop.location LIKE '%France%' OR prop.location LIKE '%Germany%' OR prop.location LIKE '%UK%'
+AND bk.booking_id NOT IN (
+SELECT booking_id
+FROM Payments
+);
