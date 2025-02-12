@@ -1,0 +1,15 @@
+cnt=0
+        lst=[]
+        for i in range(len(s1)):
+            if s1[i]==s2[i]:
+                continue
+            else:
+                lst.append(i)
+                cnt+=1
+        if cnt==0:
+            return True
+        if cnt==2:
+            for i in lst:
+                if s1[lst[0]]==s2[lst[1]] and s1[lst[1]]==s2[lst[0]]:
+                    return True
+        return False
