@@ -1,0 +1,5 @@
+X,Y=map(int,input().split())
+if 1<=X<=150 and 0<=Y<=10:
+    Y=Y*10
+    c=X+(Y)
+print(c)
