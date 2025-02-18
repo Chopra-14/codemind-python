@@ -1,0 +1,33 @@
+from collections import Counter
+
+
+
+for i in range(int(input())):
+
+
+
+    n=int(input())
+
+    a=list(map(int,input().split()))
+
+    r=True
+
+    freq=Counter(a)
+
+    for x,count in freq.items():
+
+        if count>1:
+
+            print(1)
+
+            print(x)
+
+            r=False
+
+            break
+
+        
+
+    if r:
+
+        print(-1)
