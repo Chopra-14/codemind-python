@@ -1,0 +1,19 @@
+for t in range(int(input())):
+
+    n = int(input())
+
+    s = input()
+
+    if n==1 and s[0]!='z':
+
+        print(chr(ord(s[0])+1))
+
+    elif ''.join(set(s))=='z':
+
+        print(-1)
+
+    else:
+
+        print('z'*n)
+
+    
