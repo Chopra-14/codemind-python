@@ -1,0 +1,7 @@
+X,Y=map(int,input().split())
+if X+(10*Y)>=100:
+    print("YES")
+else:
+    print("NO")
+
+
