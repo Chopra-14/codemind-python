@@ -1,0 +1,17 @@
+from collections import Counter
+for i in range(int(input())):
+    n = int(input())
+    a = list(input().split())
+    b = []
+    c = []
+    
+    b = Counter(a)
+    for i in b: 
+        if b[i] % 2 == 0:  # multiple of 2
+            c.append('0')
+        elif b[i] > 1:   #twice
+            c.append(i)
+            c.append('0')
+        else:
+            c.append(i) # once
+    print(len(set(c)))
