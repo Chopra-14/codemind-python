@@ -1,0 +1,55 @@
+t = int(input())
+
+for g in range(t):
+
+    n,f = map(int,input().split())
+
+    st = str(input())
+
+    ar = [0]*5
+
+    for i in st:
+
+        if i == 'A':
+
+            ar[0] += 1
+
+        if i == 'B':
+
+            ar[1] += 1
+
+        if i == 'C':
+
+            ar[2] += 1
+
+        if i == 'D':
+
+            ar[3] += 1
+
+        if i == 'E':
+
+            ar[4] += 1
+
+    tot = 0
+
+    ar = sorted(ar,reverse=True)
+
+    m = 0
+
+    for i in ar:
+
+        if i > 0 and ((int((n-m)*(n-m+1)/2))-(int((n-i-m)*(n-i-m+1)/2))) >= f:
+
+            tot += f
+
+            m += i
+
+            
+
+    
+
+    for i in range(n-m):
+
+        tot += i+1
+
+    print(tot)
