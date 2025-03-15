@@ -1,0 +1,10 @@
+for _ in range(int(input())):
+
+    x, y, k = map(int, input().split())
+    change= abs(x - y)  
+    if change==k:
+        print(0)
+    elif (change-k)%2==0:
+        print(abs(change-k)//2)
+    else:
+        print(-1) 
