@@ -1,0 +1,19 @@
+for i in range(int(input())):
+
+    n = int(input())
+    x = list(map(int,input().split()))
+    y = list(map(int,input().split()))
+    
+    for i in range(n):
+        pivot_index = i
+        l = [(abs(x[j]-x[pivot_index]),x[j]) for j in range(n)]
+        l.sort()
+        
+        new_y = [i[1] for i in l]
+        
+        if new_y == y:
+            print(i+1)
+            break
+        
+    else:
+        print(-1)
