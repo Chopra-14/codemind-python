@@ -1,0 +1,9 @@
+a,b,c,d=map(int,input().split())
+e=abs(a-b)
+f=abs(c-d)
+if e>f:
+    print("Second")
+elif e==f:
+    print("Both")
+else:
+    print("first")
