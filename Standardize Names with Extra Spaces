@@ -1,0 +1,1 @@
+select trim(customername) from Customer;
