@@ -1,0 +1,7 @@
+T = int(input().strip())
+for i in range(T):
+    X, Y = map(int, input().split())
+    if abs(X - Y) <= 1:
+        print(X + Y)
+    else:
+        print(2 * max(X, Y) - 1)
