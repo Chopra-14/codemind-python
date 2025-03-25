@@ -1,0 +1,11 @@
+def choose_best_dish(values):
+
+    F1, P1, F2, P2 = values
+
+    diff1, diff2 = abs(F1 - P1), abs(F2 - P2)
+    
+    return "First" if diff1 < diff2 else "Second" if diff2 < diff1 else "Both"
+
+values = list(map(int, input().split()))
+
+print(choose_best_dish(values))
