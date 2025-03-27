@@ -1,0 +1,2 @@
+update AI_TOOLS set category='Library' where category='Framework';
+select category from AI_TOOLS;
