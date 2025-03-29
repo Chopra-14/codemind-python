@@ -1,0 +1,10 @@
+for i in range(int(input())):
+
+    n=int(input())
+    l=[int(x) for x in input().split()]
+    k=l[-1]
+    m=0
+    for i in range(n):
+        if l[i]>=k:
+           print(n-i-1)
+           break
