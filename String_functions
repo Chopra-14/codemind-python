@@ -1,0 +1,30 @@
+<html>
+<body>
+<script>
+let str="  Hello, World!  ";
+document.writeln(str);
+document.writeln("<br>");
+document.writeln("length: "+str.length);
+document.writeln("<br>");
+document.writeln("lowercase: "+str.toLowerCase());
+document.writeln("<br>");
+document.writeln("uppercase: "+str.toUpperCase());
+document.writeln("<br>");
+document.writeln("charat: "+str.charAt(0));
+document.writeln("<br>");
+document.writeln("replace hello to hlo: "+str.replace("Hello","Hlo"));
+document.writeln("<br>");
+document.writeln("substring: "+str.substring(0,5));
+document.writeln("<br>");
+document.writeln("pad_start: "+str.padStart(16,"o"));
+document.writeln("<br>");
+document.writeln("pad_End: "+str.padEnd(16,"o"));
+document.writeln("<br>");
+document.writeln("trim: "+str.trim());
+document.writeln("<br>");
+document.writeln("trim_Start: "+str.trimStart());
+document.writeln("<br>");
+document.writeln("trim_End: "+str.trimEnd());
+</script>
+</body>
+</html>
