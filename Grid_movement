@@ -1,0 +1,6 @@
+A, B, C, D = map(int, input().split())
+
+x = A - C
+y = B - D
+
+print(x, y)
