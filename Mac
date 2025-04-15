@@ -1,0 +1,19 @@
+
+def max_ones_after_operations(N, K, S):
+    S = list(S)  
+    for _ in range(K):
+        changed = False
+        for i in range(N - 1):
+            if S[i] == '0' and S[i + 1] == '1':
+                S[i] = '1'
+                changed = True
+                break 
+        if not changed:
+            break  
+    return S.count('1')
+T = int(input())
+
+for i in range(T):
+    N, K = map(int, input().split())
+    S = input().strip()
+    print(max_ones_after_operations(N, K, S))
