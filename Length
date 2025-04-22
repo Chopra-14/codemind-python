@@ -1,0 +1,17 @@
+t = int(input())
+for _ in range(t):
+    n, k, d = map(int, input().split())
+    t_val= list(map(int, input().split()))
+    bloom_day = [1] * n
+    tp = 0
+
+    for day in range(1, d + 1):
+        blooming = [i for i in range(n) if bloom_day[i] <= day]
+        cpt = max(0, len(blooming) - k)
+        blooming.sort(key=lambda x: t_val[x])
+        for i in range(cpt):
+            flo_i = blooming[i]
+            bloom_day[flo_i] = day + t_val[flo_i]
+            tp += 1
+
+    print(tp)
