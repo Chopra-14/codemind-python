@@ -1,0 +1,12 @@
+def per(n):
+    for i in range(n, 2, -1):
+        a, b, c = i, i - 1, i - 2
+        if a < b + c:
+            return a + b + c
+    return -1
+
+T = int(input())
+for _ in range(T):
+    N = int(input())
+    print(per(N))
+    
