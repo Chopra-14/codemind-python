@@ -1,0 +1,16 @@
+def people(n, s):
+    boys = 0
+    girls = 0
+    for i in range(n):
+        if s[i] == 'B':
+            boys += 1
+        else:
+            girls += 1
+        if boys > 2 * girls:
+            return i + 1 
+    return n  
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    s = input().strip()
+    print(people(n, s))
