@@ -1,0 +1,12 @@
+T = int(input())
+for _ in range(T):
+    ratings = list(map(int, input().split()))
+    total = sum(ratings)
+    ratings.sort()
+    coins = 0
+    i = 0
+    while total < 35 and i < 5:
+        total += 10 - ratings[i]
+        coins += 100
+        i += 1
+    print(coins)
