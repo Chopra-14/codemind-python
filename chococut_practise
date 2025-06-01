@@ -1,0 +1,27 @@
+# cook your dish here
+T = int(input())
+for i in range(T):
+    N, M, K = map(int, input().split())
+    total = N * M
+    if K == 0: 
+        print(total)
+        continue
+    if K >= total:
+        print(0)
+        continue
+    maximo_para_alicia = 0
+    for fila in range(1, N):
+        parte1 = fila * M
+        parte2 = (N - fila) * M
+        if parte1 >= K:
+            maximo_para_alicia = max(maximo_para_alicia, parte2)
+        if parte2 >= K:
+            maximo_para_alicia = max(maximo_para_alicia, parte1)
+    for col in range(1, M):
+        parte1 = col * N
+        parte2 = (M - col) * N
+        if parte1 >= K:
+            maximo_para_alicia = max(maximo_para_alicia, parte2)
+        if parte2 >= K:
+            maximo_para_alicia = max(maximo_para_alicia, parte1)
+    print(maximo_para_alicia)
