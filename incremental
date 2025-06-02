@@ -1,0 +1,27 @@
+def solve():
+    x, y, k = map(int, input().split())
+
+    alice_wins = False
+
+    for s in range(1, k + 1):
+        if s <= x:
+            rem_x = x - s
+            pile_y_val = y
+            if rem_x <= s and pile_y_val <= s:
+                alice_wins = True
+                break
+
+        if s <= y:
+            rem_y = y - s
+            pile_x_val = x
+            if rem_y <= s and pile_x_val <= s:
+                alice_wins = True
+                break
+
+    if alice_wins:
+        print("Alice")
+    else:
+        print("Bob")
+t = int(input())
+for _ in range(t):
+    solve()
