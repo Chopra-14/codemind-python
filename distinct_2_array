@@ -1,0 +1,19 @@
+def shortest_good_subarray_length(A):
+    n = len(A)
+    min_len = float('inf')
+
+    for i in range(n):
+        freq = {}
+        for j in range(i, n):
+            freq[A[j]] = freq.get(A[j], 0) + 1
+            if len(freq) > 2:
+                break  
+            if len(freq) == 2:
+                min_len = min(min_len, j - i + 1)
+
+    return min_len if min_len != float('inf') else -1
+T = int(input())
+for _ in range(T):
+    N = int(input())
+    A = list(map(int, input().split()))
+    print(shortest_good_subarray_length(A))
