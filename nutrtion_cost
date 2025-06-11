@@ -1,0 +1,24 @@
+# cook your dish here
+for _ in range(int(input())):
+    n,c=map(int, input().split())
+    a=list(map(int, input().split()))
+    b=list(map(int, input().split()))
+
+    maxValue=0
+    totCost=0
+    x=0
+    vitCost={}
+    
+    for i in range(n):
+        if a[i] not in vitCost:
+            vitCost[a[i]] = b[i]
+        else:
+            vitCost[a[i]] = min(vitCost[a[i]], b[i])
+            
+    for i in sorted(vitCost.values()):
+        totCost+=i
+        x+=1
+        value = c*x - totCost
+        maxValue = max(maxValue, value)
+        
+    print(maxValue)
