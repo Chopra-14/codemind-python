@@ -1,0 +1,8 @@
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    pattern = "abc"
+    s = ""
+    for i in range(n):
+        s += pattern[i % 3]
+    print(s)
