@@ -1,0 +1,4 @@
+for i in range(int(input())):
+    A,B=map(int,input().split())
+    syrup=min(A,B//2)
+    print(syrup*3)
