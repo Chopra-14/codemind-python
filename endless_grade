@@ -1,0 +1,6 @@
+for i in range(int(input())):
+    N=int(input())
+    A=list(map(int, input().split()))
+    s=A[0]
+    p=sum(1 for x in A if x >=s)
+    print(p)
