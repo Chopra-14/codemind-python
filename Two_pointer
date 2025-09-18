@@ -1,0 +1,8 @@
+While (left<right){
+Int current_sum=are[left]+are[right]
+If(current_sum==target){
+Return {left, right}
+}
+Else if (current_sum<target) left++
+Else right++
+}
