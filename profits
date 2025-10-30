@@ -1,0 +1,8 @@
+t=int(input())
+for i in range(t):
+    N, X = map(int, input().split())
+    p= 0
+    for i in range(1, N + 1):
+        if i > X:
+            p += (i - X)
+    print(p)
