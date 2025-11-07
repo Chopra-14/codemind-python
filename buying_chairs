@@ -1,0 +1,7 @@
+# cook your dish here
+T = int(input())
+for _ in range(T):
+    W, P, K = map(int, input().split())
+    wooden_used = min(W, K)
+    stylishness = 2 * wooden_used + (K - wooden_used)
+    print(stylishness)
