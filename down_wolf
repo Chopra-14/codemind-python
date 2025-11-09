@@ -1,0 +1,18 @@
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    s = list(input().strip())
+    
+    unsafe = [False] * n  
+    
+    for i in range(n):
+        if s[i] == '1': 
+            j = i + 1
+            while j < n and s[j] == '0':
+                unsafe[j] = True
+                j += 1
+                if j < n and s[j] == '1':
+                    break  
+
+    safe_birds = sum(1 for i in range(n) if s[i] == '0' and not unsafe[i])
+    print(safe_birds)
