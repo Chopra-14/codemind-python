@@ -1,0 +1,9 @@
+for i in range(int(input())):
+    N = int(input().strip())
+    S = input().strip()
+    if '0' not in S:
+        print(0)
+    else:
+        first_zero = S.index('0')
+        count = S[first_zero+1:].count('1')
+        print(count)
