@@ -1,0 +1,14 @@
+# cook your dish here
+for _ in range(int(input())):
+    n = int(input())
+    p = list(map(int, input().split()))
+    
+    dist=0
+    for i in range(n,0,-1):
+        place=p.index(i)
+        left=place
+        right=len(p)-place-1
+        dist+=min(left,right)
+        p.pop(place)
+        
+    print(dist)
