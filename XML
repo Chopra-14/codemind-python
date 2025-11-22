@@ -1,0 +1,12 @@
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    best_speed = -1
+    best_idx = 1
+    for i in range(1, n+1):
+        d, ti = map(int, input().split())
+        speed = d // ti
+        if speed > best_speed:
+            best_speed = speed
+            best_idx = i
+    print(best_idx)
