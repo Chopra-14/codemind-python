@@ -1,0 +1,9 @@
+for i in range(int(input())):
+    s=input()
+    ca,cb=0,0
+    for i in s:
+        if i=='a':
+            ca+=1
+        elif i=='b':
+            cb+=1
+    print(min(ca,cb))
