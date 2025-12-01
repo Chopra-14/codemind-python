@@ -1,0 +1,5 @@
+N, B = map(int, input().split())
+if N >= 10 * B:
+    print("YES")
+else:
+    print("NO")
