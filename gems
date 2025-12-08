@@ -1,0 +1,11 @@
+# cook your dish here
+T=int(input())
+for i in range(T):
+    R,B,G=map(int,input().split())
+    bundle = min(R,B,G)
+    coi = bundle*10
+    R -=bundle
+    B -=bundle
+    G -=bundle
+    coi += (R+B+G)*3
+    print(coi)
